@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*Цвет фона всего сайта*/
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  background-color: #a292b3;
+  height: 10px;
+}
+
+.container {
+  margin: 0 20%;
+}
+
+.top-nav {
+  margin-top: 40px;
+}
+
+.logo {
+  display: flex;
+}
+.logo div {
+  text-transform: uppercase;
+  color: #a292b3;
+  font-family: ﻿SamoSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-size: 39px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu li {
+  margin-right: 70px;
+}
+.menu a {
+  font-family: ﻿SegoeUI, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  text-decoration: none;
+  font-size: 19px;
+  color: #494848;
+}
+.menu a i {
+  margin-right: 10px;
+}
+
+.slider {
+  margin-top: 30px;
+}
+.slider button {
+  background-color: #a292b3;
+}
+
+.slider-item {
+  background: url(../img/layer.png) no-repeat;
+  background-size: 100%;
+}
+.slider-item-title {
+  font-family: "Roboto", sans-serif;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 117px;
+  margin-top: 15%;
+}
+.slider-item-description {
+  font-family: "Roboto", sans-serif;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 31px;
+  margin-bottom: 15%;
+}
+
+.description {
+  margin: 40px 5% 0 5%;
+  font-family: ﻿SegoeUI-Italic, ﻿SegoeUI-BoldItalic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-size: 23px;
+  color: #494848;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+}
+.description span {
+  color: #a292b3;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+@import "colors"
+
+body
+	background-color: $body
+	margin: 0
+	padding: 0
+.line
+	background-color: $detail
+	height: 10px
+.container
+	margin: 0 20%
+.top-nav
+	margin-top: 40px
+.logo
+	display: flex
+	div
+		text-transform: uppercase
+		color: $detail
+		font-family: ﻿SamoSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+		font-size: 39px
+.menu
+	display: flex
+	list-style: none
+	li
+		margin-right: 70px
+	a
+		font-family: ﻿SegoeUI, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+		text-decoration: none
+		font-size: 19px
+		color: $text
+		i
+			margin-right: 10px
+.slider
+	margin-top: 30px
+	button
+		background-color: $detail
+@mixin light_text
+	font-family: 'Roboto', sans-serif
+	color: $light_text
+	text-align: center
+.slider-item
+	background: url(../img/layer.png) no-repeat
+	background-size: 100%
+	&-title
+		@include light_text
+		font-size: 117px
+		margin-top: 15%
+	&-description
+		@include light_text
+		font-size: 31px
+		margin-bottom: 15%
+.description
+	margin: 40px 5% 0 5%
+	font-family: ﻿SegoeUI-Italic, ﻿SegoeUI-BoldItalic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+	font-size: 23px
+	color: $text
+	text-align: center
+	font-style: italic
+	font-weight: 500
+	span
+		color: $detail
