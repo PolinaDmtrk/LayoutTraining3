@@ -1,4 +1,5 @@
 @import "colors"
+@import "fonts"
 
 body
  background-color: $body
@@ -19,7 +20,7 @@ p
  div
   text-transform: uppercase
   color: $detail
-  font-family: ﻿SamoSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+  font-family: "SamoSansPro"
   font-size: 39px
 .menu
  display: flex
@@ -27,8 +28,8 @@ p
  li
   margin-right: 70px
  a
-  font-family: ﻿SegoeUI, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
   text-decoration: none
+  font-family: "SegoeUI"
   font-size: 19px
   color: $text
   i
@@ -38,7 +39,6 @@ p
  button
   background-color: $detail
 @mixin light_text
- font-family: 'Roboto', sans-serif
  color: $light_text
  text-align: center
 .slider-item
@@ -46,10 +46,12 @@ p
  background-size: 100%
  &-title
   @include light_text
+  font-family: "StRydeRegular", sans-serif
   font-size: 117px
   margin-top: 15%
  &-description
   @include light_text
+  font-family: "SofiaProLight"
   font-size: 31px
   margin-bottom: 15%
 .description

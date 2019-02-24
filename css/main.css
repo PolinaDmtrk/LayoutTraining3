@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SamoSansPro";
+  src: url("../fonts/SamoSansPro/SamoSansPro.ttf");
+}
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/SegoeUI/SegoeUI.ttf");
+}
+@font-face {
+  font-family: "StRydeRegular";
+  src: url("../fonts/st_ryde/StRyde-Regular.otf");
+}
+@font-face {
+  font-family: "SofiaProLight";
+  src: url("../fonts/SofiaPro/SofiaProLight.ttf");
+}
 body {
   background-color: #fff;
   margin: 0;
@@ -29,7 +45,7 @@ p {
 .logo div {
   text-transform: uppercase;
   color: #a292b3;
-  font-family: ﻿SamoSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: "SamoSansPro";
   font-size: 39px;
 }
 
@@ -41,8 +57,8 @@ p {
   margin-right: 70px;
 }
 .menu a {
-  font-family: ﻿SegoeUI, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
   text-decoration: none;
+  font-family: "SegoeUI";
   font-size: 19px;
   color: #494848;
 }
@@ -62,16 +78,16 @@ p {
   background-size: 100%;
 }
 .slider-item-title {
-  font-family: "Roboto", sans-serif;
   color: #fbfbfb;
   text-align: center;
+  font-family: "StRydeRegular", sans-serif;
   font-size: 117px;
   margin-top: 15%;
 }
 .slider-item-description {
-  font-family: "Roboto", sans-serif;
   color: #fbfbfb;
   text-align: center;
+  font-family: "SofiaProLight";
   font-size: 31px;
   margin-bottom: 15%;
 }
