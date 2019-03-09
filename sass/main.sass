@@ -17,11 +17,13 @@ p
  margin-top: 40px
 .logo
  display: flex
+ align-items: center
  div
   text-transform: uppercase
   color: $detail
   font-family: "SamoSansPro"
   font-size: 39px
+  margin-left: 15px
 .menu
  display: flex
  list-style: none
@@ -31,13 +33,28 @@ p
   text-decoration: none
   font-family: "SegoeUI"
   font-size: 19px
-  color: $text
+  color: $detail
   i
    margin-right: 10px
 .slider
  margin-top: 30px
  button
-  background-color: $detail
+  background: $detail
+  height: 65px
+  width: 35px
+  z-index: 1
+.slick-prev
+  margin-left: 25px
+.slick-next
+  margin-right: 25px
+.slick-prev:before, .slick-next:before
+  height: 32px
+  width: 22px
+  color: $main
+.slick-prev:before
+  content: url("../img/arrow-left.svg")
+.slick-next:before
+  content: url("../img/arrow-right.svg")
 @mixin light_text
  color: $light_text
  text-align: center
@@ -49,21 +66,24 @@ p
   font-family: "StRydeRegular", sans-serif
   font-size: 117px
   margin-top: 15%
+  text-shadow: -5px 3px 1px rgb(42,42,59,0.5)
  &-description
   @include light_text
   font-family: "SofiaProLight"
   font-size: 31px
   margin-bottom: 15%
+  text-shadow: -1px 1px 1px rgb(42,42,59,0.5)
 .description
  margin: 40px 5% 0 5%
- font-family: ﻿SegoeUI-Italic, ﻿SegoeUI-BoldItalic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+ font-family: "SegoeUI"
  font-size: 23px
  color: $text
  text-align: center
  font-style: italic
  font-weight: 500
  span
-  color: $detail
+  color: $detail-dark
+  font-weight: bold
 .item
  margin: 40px 0 50px 0
  &-img
@@ -71,13 +91,14 @@ p
  &-description
   height: 100%
  h3
-  font-family: ﻿SegoeUI-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+  font-family: "SegoeUI"
   font-size: 31px
+  font-weight: bold
   color: $text
   text-align: left
   margin: 5px 0 20px 0
  p
-  font-family: ﻿SegoeUI, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+  font-family: "SegoeUI"
   font-size: 17px
   color: lighten($text, 30%)
   text-align: left
@@ -85,18 +106,57 @@ p
 .readmore
  font-style: italic
  color: lighten($text, 30%)
- font-family: ﻿SegoeUI-Italic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
+ font-family: ﻿"SegoeUI"
  font-size: 15px
  text-align: right
+ a
+  color: lighten($text, 30%)
+  text-decoration: none
 .feature
  margin-bottom: 50px
  &-text
+  margin: 0 10px 0 60px
   padding: 0
-  font-family: ﻿SegoeUI, ﻿SegoeUI-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular
-  font-size: 21px
+  font-family: "SegoeUI"
+  font-size: 23px
   color: $text
   span
    font-weight: 700
- &-line
-  height: 3px
-  background-color: lighten($text, 50%)
+#sponsors
+  display: flex
+  background-color: $main
+  width: 1000px
+  margin: 0 auto
+  margin-bottom: 60px
+.sponsor
+  border: 1px solid lightgrey
+  width: 250px
+  height: 70px
+  display: flex
+  align-items: center
+  justify-content: center
+footer
+  background-color: $footer
+  height: 50px
+  .container
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+      font-family: "﻿SegoeUI"
+      font-size: 15px
+      color: $text
+#socials
+  display: flex
+.social
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 15px
+  width: 22px
+  height: 22px
+  border-radius: 100%
+  background-color: $detail
+  a
+    color: $footer

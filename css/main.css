@@ -41,12 +41,14 @@ p {
 
 .logo {
   display: flex;
+  align-items: center;
 }
 .logo div {
   text-transform: uppercase;
   color: #a292b3;
   font-family: "SamoSansPro";
   font-size: 39px;
+  margin-left: 15px;
 }
 
 .menu {
@@ -60,7 +62,7 @@ p {
   text-decoration: none;
   font-family: "SegoeUI";
   font-size: 19px;
-  color: #494848;
+  color: #a292b3;
 }
 .menu a i {
   margin-right: 10px;
@@ -70,7 +72,32 @@ p {
   margin-top: 30px;
 }
 .slider button {
-  background-color: #a292b3;
+  background: #a292b3;
+  height: 65px;
+  width: 35px;
+  z-index: 1;
+}
+
+.slick-prev {
+  margin-left: 25px;
+}
+
+.slick-next {
+  margin-right: 25px;
+}
+
+.slick-prev:before, .slick-next:before {
+  height: 32px;
+  width: 22px;
+  color: #f5f5f5;
+}
+
+.slick-prev:before {
+  content: url("../img/arrow-left.svg");
+}
+
+.slick-next:before {
+  content: url("../img/arrow-right.svg");
 }
 
 .slider-item {
@@ -83,6 +110,7 @@ p {
   font-family: "StRydeRegular", sans-serif;
   font-size: 117px;
   margin-top: 15%;
+  text-shadow: -5px 3px 1px rgba(42, 42, 59, 0.5);
 }
 .slider-item-description {
   color: #fbfbfb;
@@ -90,11 +118,12 @@ p {
   font-family: "SofiaProLight";
   font-size: 31px;
   margin-bottom: 15%;
+  text-shadow: -1px 1px 1px rgba(42, 42, 59, 0.5);
 }
 
 .description {
   margin: 40px 5% 0 5%;
-  font-family: ﻿SegoeUI-Italic, ﻿SegoeUI-BoldItalic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: "SegoeUI";
   font-size: 23px;
   color: #494848;
   text-align: center;
@@ -102,7 +131,8 @@ p {
   font-weight: 500;
 }
 .description span {
-  color: #a292b3;
+  color: #82699d;
+  font-weight: bold;
 }
 
 .item {
@@ -115,14 +145,15 @@ p {
   height: 100%;
 }
 .item h3 {
-  font-family: ﻿SegoeUI-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: "SegoeUI";
   font-size: 31px;
+  font-weight: bold;
   color: #494848;
   text-align: left;
   margin: 5px 0 20px 0;
 }
 .item p {
-  font-family: ﻿SegoeUI, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: "SegoeUI";
   font-size: 17px;
   color: #969494;
   text-align: left;
@@ -132,26 +163,78 @@ p {
 .readmore {
   font-style: italic;
   color: #969494;
-  font-family: ﻿SegoeUI-Italic, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: ﻿ "SegoeUI";
   font-size: 15px;
   text-align: right;
+}
+.readmore a {
+  color: #969494;
+  text-decoration: none;
 }
 
 .feature {
   margin-bottom: 50px;
 }
 .feature-text {
+  margin: 0 10px 0 60px;
   padding: 0;
-  font-family: ﻿SegoeUI, ﻿SegoeUI-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
-  font-size: 21px;
+  font-family: "SegoeUI";
+  font-size: 23px;
   color: #494848;
 }
 .feature-text span {
   font-weight: 700;
 }
-.feature-line {
-  height: 3px;
-  background-color: #c8c8c8;
+
+#sponsors {
+  display: flex;
+  background-color: #f5f5f5;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.sponsor {
+  border: 1px solid lightgrey;
+  width: 250px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #e5e5e5;
+  height: 50px;
+}
+footer .container {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container p {
+  font-family: "﻿SegoeUI";
+  font-size: 15px;
+  color: #494848;
+}
+
+#socials {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  background-color: #a292b3;
+}
+.social a {
+  color: #e5e5e5;
 }
 
 /*# sourceMappingURL=main.css.map */
